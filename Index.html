@@ -3,89 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Läkemedelslista</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .drug {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .drug h2 {
-            margin: 0 0 10px;
-            font-size: 1.5em;
-        }
-        .drug p {
-            margin: 5px 0;
-        }
-    </style>
+    <title>Läkemedelsanvisningar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Läkemedelslista</h1>
-
-    <div class="drug">
-        <h2>Acetylcystein (inh/inj 200 mg/ml)</h2>
-        <p><strong>Indikation:</strong> Mukusreglerande vid inhalation samt antidot till paracetamol.</p>
-        <p><strong>Dosering:</strong> Som antidot: Dos och hastighet ordineras av läkare baserat på patientens vikt. Som antidot kan Acetylcystein ges peroralt men orsakar relativt ofta kräkningar varför intravenös tillförsel rekommenderas i första hand.</p>
-        <p><strong>Biverkningar:</strong> Illamående, flush, klåda, urtikaria. Allvarliga allergiska biverkningar av acetylcystein såsom angioödem, bronkospasm och hypotension kan förekomma.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Aciklovir 25 mg/ml (20 ml = 500 mg)</h2>
-        <p><strong>Indikation:</strong> Virushämmande medel för systemiskt bruk.</p>
-        <p><strong>Dosering:</strong> Spädning nedan enligt FASS:</p>
-        <ul>
-            <li>1 x 250 mg: 10 ml tillsatsvatten för injektionsvätskor eller NaCl 9 mg/ml för inj., 50 ml (100 ml infusionspåse)</li>
-            <li>1 x 500 mg: 20 ml tillsatsvatten för injektionsvätskor eller NaCl 9 mg/ml för inj., 100 ml infusionspåse</li>
-        </ul>
-        <p>Varje dos av den utspädda stamlösningen (5 mg/ml) bör administreras i form av långsam intravenös infusion under loppet av 1 timme.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Actilyse (alteplas) 50 mg</h2>
-        <p><strong>Indikation:</strong> Trombolytisk behandling vid akut hjärtinfarkt, lungemboli och ischemisk stroke.</p>
-        <p><strong>Dosering:</strong> Alteplas (Actilyse) ges i dosen 0.9 mg/kg, maxdos 90 mg. Blandas till koncentrationen 1 mg/ml.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Adenosin 5 mg/ml (2 ml)</h2>
-        <p><strong>Indikation:</strong> Antiarytmika och diagnostikum. Avbrytande av paroxysmal supraventrikulär takykardi innefattande AV-noden. Ges vid arytmi.</p>
-        <p><strong>Dosering:</strong> Ges endast i Akutrummet med uppkopplad defibrillator samt pågående dropp. Ges outspädd i.v; initialt 5 mg, upprepa 5 mg eller enligt FASS högre dos 10 mg; tredje dos 15 mg vb. Doser större än 15 mg krävs vanligtvis inte.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Adrenalin 0.1 mg/ml (förfyllda sprutor) eller 1 mg/ml</h2>
-        <p><strong>Indikation:</strong> Adrenalin är en katekolamin som stimulerar det sympatiska nervsystemet varvid hjärtfrekvens, minutvolym och koronargenomblödning ökar. Bronkialmuskulaturen relaxeras och en avsvällning av bronkial-slemhinnan åstadkommes genom kärlkonstriktion.</p>
-        <p><strong>Dosering:</strong> Vid HLR: Ges 10 ml (0.1 mg/ml lösning) (1 mg) adrenalin genom i.v. eller i.o.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Akineton inj 5 mg/ml (1 ml)</h2>
-        <p><strong>Indikation:</strong> Parkinsonism. Medikamentellt betingade extrapyramidala symtom (akut dystoni och initial dyskinesi).</p>
-        <p><strong>Dosering:</strong> Ges intramuskulärt eller långsamt intravenöst.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Albumin (Alburex) 200 g/liter (100 ml)</h2>
-        <p><strong>Indikation:</strong> Blodsubstitut och plasmaproteiner. Ges vid återställande eller upprätthållande av cirkulerande blodvolym vid volymbrist och när användning av en kolloid är lämplig.</p>
-        <p><strong>Dosering:</strong> Kan ges i samma hastighet som paracetamol utan att spädas. Barn ska ha lösningen som är på 50 g/liter.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Alfentalin 0.5 mg/ml (2 ml)</h2>
-        <p><strong>Indikation:</strong> Ultralortverkande opioid. Hanteras av erfaren anestesiolog. Analgetikum vid korta eller medellånga kirurgiska ingrepp.</p>
-    </div>
-
-    <div class="drug">
-        <h2>Amiodarone 50 mg/ml (3 ml)</h2>
-        <p><strong>Indikation:</strong> Retbarhetsnedsättande medel. Ges vid symtomgivande hjärtarytmier inkl. symptomgivande ventrikulär och supraventrikulär takyarytmi, förmaksflimmer och förmaksfladder, AV-block, Wolff-Parkinson Whites syndrom, andra livshotande kammararytmier och kammarflimmer. Ges under övervakning/monitorering.</p>
-    </div>
-
-    <!-- Lägg till fler läkemedel på samma sätt -->
-
+    <h1>Sök Läkemedel</h1>
+    <input type="text" id="search" placeholder="Ange läkemedelsnamn">
+    <button onclick="searchMedication()">Sök</button>
+    <div id="result"></div>
+    <script src="script.js"></script>
 </body>
 </html>
